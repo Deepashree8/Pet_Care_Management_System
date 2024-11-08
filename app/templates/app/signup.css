@@ -1,0 +1,97 @@
+.nav-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: "Kumbh Sans", sans-serif;
+    }
+    
+    .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    width: 100%; /* Takes full width for better alignment */
+    }
+    .row1{
+    display:flex;
+    }
+    
+     .topic {
+    font-size: 36px;
+    font-family: "Jolly Lodger", sans-serif;
+    color: #000;
+    
+    margin: 0;
+    }
+    
+     .nav-2 {
+    text-align: center; /* Center-aligns the text inside the nav */
+    }
+    
+    .footer {
+    background-color: #DBEFEC;
+    height: auto; /* Adjust to fit content */
+    position: relative;
+    padding: 20px;
+    /* margin-top: 25px; */
+    text-align: center;
+    bottom:zero;
+    }
+    
+    .row1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items at the top */
+    text-align: left; /* Left-align the text in each column */
+    }
+    
+    .col {
+    flex: 1; /* Equally distribute space */
+    margin: 10px;
+    }
+    
+    h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+    }
+    
+    ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    li {
+    font-size: 16px;
+    line-height: 1.6;
+    }
+    .container{
+    justify-content:center;
+    font-family:"Cormorant Garamond", serif;
+    font-size:30px;
+    }
+    /* div class form */
+    .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    }
+    
+    /* #bottom class */
+    .custom-button {
+    width: 150px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    background-color: #4CAF50; /* Background color (Green) */
+    color: white; /* Text color */
+    font-size: 20px; /* Font size */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center the text inside the button */
+    }
+    
+    .custom-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    }

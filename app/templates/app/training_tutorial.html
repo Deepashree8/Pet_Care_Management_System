@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Training Tutorials</title>
+    {% load static %}
+    <style>
+
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Space around images */
+        width: 80%; /* Set a width as per your design */
+        margin: 0 auto; /* Center the container */
+      }
+
+      .image-container a {
+        flex-basis: calc(33% - 60px); /* Three items per row with margin */
+        margin-bottom: 40px; /* Space between rows */
+      }
+
+      .image-container img {
+        width: 100%; /* Make the images fit within their flex items */
+        border-radius: 8px; /* Optional for rounded corners */
+      }
+
+      body {
+        text-align: center;
+        background-color: #f0f0f0; /* Optional background color */
+      }
+
+      .nav-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+      .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    width: 100%; /* Takes full width for better alignment */
+}
+
+.topic {
+    font-size: 36px;
+    font-family: "Jolly Lodger", sans-serif;
+    color: #000;
+    
+    margin: 0;
+}
+      .container-fluid {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically */
+    height: 100%; /* Takes full height of the navigation bar */
+}
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="{% static 'images/IMG-20240723-WA0010 1.png' %}" alt="logo" width="50" height="50" style="margin-top: -3px; margin-left: -1100px;">
+            <a href="{% url 'home' %}" style="text-decoration: none; margin-left: 23px; margin-top: 2px;">
+                <h1 class="topic">NUZZLE & NURTURE</h1>
+            </a>
+            <a href="signup.html" style="text-decoration: none; position: absolute; right: 20px; top: 8px;">
+                <h3 style="font-family: Kumbh Sans, sans-serif; display: inline; vertical-align: middle; color:black">LOGIN</h3>
+                <img src="{% static 'images/download 1.png' %}" alt="login" width="50" height="50" style="vertical-align: middle; margin-left: 10px;">
+            </a>
+        </div>
+    </nav>
+  
+       
+    <nav class="nav-2" style="background-color: #DBEFEC; margin-top: 15px; height: 50px;">
+      <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100%;">
+        <a class="nav-link">Training Tutorials</a>
+      </div>
+    </nav>
+
+    <div class="image-container" style="margin-top: 60px;">
+      <a href="https://www.youtube.com/watch?v=jFMA5ggFsXU">
+        <img src="{% static 'images/Screenshot 2024-10-02 at 6.17.09 PM.png' %}" alt="Image 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=Zrmf7ScJVH0">
+        <img src="{% static 'images/Screenshot 2024-10-02 at 6.17.27 PM.png' %}" alt="Image 2">
+      </a>
+      <a href="https://www.youtube.com/watch?v=PS8sTLqKfA8&t=2s">
+        <img src="{% static 'images/PHOTO-2024-10-02-18-29-35.jpg' %}" alt="Image 3">
+      </a>
+      <a href="https://www.youtube.com/watch?v=SbR0YXaMyvMs">
+        <img src="{% static 'images/Screenshot 2024-10-02 at 6.18.27 PM.png' %}" alt="Image 4">
+      </a>
+      <a href="https://www.youtube.com/watch?app=desktop&v=VUuIO_ulqyE">
+        <img src="{% static 'images/Screenshot 2024-10-02 at 6.18.53 PM.png' %}" alt="Image 5">
+      </a>
+      <a href="https://www.youtube.com/watch?app=desktop&v=0pl8aW2bWrc">
+        <img src="{% static 'images/Screenshot 2024-10-02 at 6.19.59 PM.png' %}" alt="Image 6">
+      </a>
+    </div>
+
+  </body>
+</html>

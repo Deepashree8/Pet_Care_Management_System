@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Weight Calculator</title>
+
+    <style>
+
+
+        /* Responsive body and container */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0f2;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        header {
+            background-color: #c0e0e4;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #34495e;
+            text-align: center;
+        }
+
+        .calculator h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        form label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #d3545a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+
+        .result p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .result span {
+            font-weight: bold;
+        }
+
+        /* Make sure the page fits properly on any screen size */
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container" style="height: 500px; width: 900px;">
+
+        <div class="calculator">
+            <h2>Weight Calculator</h2>
+
+            <form id="weightForm">
+                <label for="petType">Pet Type:</label>
+                <select id="petType">
+                    <option value="">Select Pet Type</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="Enter height in cm" min="1">
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter weight in kg" min="1">
+
+                <button type="button" onclick="calculateBMI()">Calculate</button>
+            </form>
+
+            <div class="result">
+                <p>Calculated BMI: <span id="bmiResult">--</span></p>
+                <p>Result: <span id="statusResult">--</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            let petType = document.getElementById("petType").value;
+            let height = document.getElementById("height").value;
+            let weight = document.getElementById("weight").value;
+        
+            let bmi = "N/A";  // Placeholder logic for calculating BMI
+            let result = "N/A"; // Placeholder for underweight, normal, or overweight
+        
+            if (petType && height && weight) {
+                // Calculate BMI = weight / (height in meters)^2
+                height = height / 100; // Convert height from cm to meters
+                bmi = (weight / (height * height)).toFixed(2);
+        
+                // Set result based on BMI
+                if (bmi < 18.5) {
+                    result = "Underweight";
+                } else if (bmi >= 18.5 && bmi <= 24.9) {
+                    result = "Normal";
+                } else if (bmi >= 25 && bmi <= 29.9) {
+                    result = "Overweight";
+                } else {
+                    result = "Obese";
+                }
+            }
+        
+            document.getElementById("bmiResult").textContent = bmi;
+            document.getElementById("statusResult").textContent = result;
+        }
+    </script>
+</body>
+</html>
+

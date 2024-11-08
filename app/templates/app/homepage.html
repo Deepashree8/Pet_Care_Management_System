@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page </title>
+    {% load static %}
+    <style >
+       .body{
+         background-image:url("C:\Users\Dharani\Downloads\pexels-coppertist-wu-313365563-15580402.jpg")
+       }
+      
+      .box{
+        height:495px;
+        width:335px;
+        background-color:#FFA6A6;
+        border-radius:50px;
+        margin-top: 20px;
+        margin-left: 40px;
+        }
+      .container{
+        padding:10px;
+        font-family: "Merienda", cursive;
+        color: #000;
+        
+      }
+      .container1{
+        padding:10px;
+      }
+      .container4{
+        padding:10px;
+      }
+      #img{
+        border-radius:50px;
+        padding:10px;
+        margin-left: 60px;
+        margin-top: -10px;
+        
+
+      }
+
+      #img1{
+        border-radius:40px;
+        justify-content:right;
+        width: 170px;
+        height: 105px;
+        margin-top: -14px;
+        margin-left: 210px;
+
+      }
+      .box1{
+        height:210px;
+        width:400px;
+        background-color:#FBE8A7;
+        border-radius:30px;
+        position:relative;
+        margin-top: 20px;
+      }
+      .flex-container{
+        flex:1;
+        min-width:0;
+      }
+
+      .box2{
+        height:250px;
+        width:380px;
+        background-color:#FBCA6C;
+        border-radius:30px;
+        padding:10px;
+        margin-top: 20px;
+      }
+
+      #img2{
+        border-radius:40px;
+        margin-left: 180px;
+        height: 130px;
+        margin-top: 0px;
+      }
+      .box3{
+        height:250px;
+        width:380px;
+        background-color:#D0E260;
+        border-radius:30px;
+        padding:10px;
+        margin-top: 15px;
+      }
+      .flex-container1{
+        flex:1;
+        min-width:0;
+        /* flex-direction:column; */
+      }
+      .flex-container2{
+        flex:1;
+        min-width:0;
+        /* flex-direction:column; */
+      }
+
+      .box4{
+        height:210px;
+        width:400px;
+        background-color:#e0a9c7;
+        border-radius:30px;
+        position:relative;
+        margin-top: 15px;
+      }
+
+      #img4{
+        border-radius:30px;
+        height: 105px;
+        margin-top: -13px;
+        margin-left: 180px;
+      }
+      .flex-container0{
+        display:flex;
+        justify-content:space-between;
+        gap:30px;
+      }
+      .row1{
+        display:flex;
+      }
+     
+        
+      
+      .navbar {
+    
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    margin-right: 15px;
+}
+
+.topic {
+    font-size: 36px;
+    font-family: "Jolly Lodger", sans-serif;
+    color: #000;
+    margin: 0; /* Remove extra margin */
+}
+
+.nav-2 {
+    background-color: #DBEFEC;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+    position: relative;
+    margin-top: 0px;
+}
+
+.nav-2 ul {
+    display: inline-flex;
+    gap: 50px;
+    padding: 0;
+    margin:0%;
+    list-style: none;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center align the list items */
+    
+}
+
+.nav-2 ul li {
+    display: inline;
+}
+
+.nav-2 ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.nav-2 ul li a:hover {
+    color: #007BFF;
+}
+.lnn{
+  position: relative;
+}
+#img5{
+  height: 125px;
+  border-radius: 30px;
+  margin-left: 180px;
+  margin-top: -20px;
+}
+.footer {
+    background-color: #DBEFEC;
+    height: auto; /* Adjust to fit content */
+    position: relative;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items at the top */
+    text-align: left; /* Left-align the text in each column */
+}
+
+.col {
+    flex: 1; /* Equally distribute space */
+    margin: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Kumbh+Sans:wght@100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+      </head>
+  <body>
+
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+          <img src="{% static 'images/IMG-20240723-WA0010 1.png' %}" alt="logo" width="50" height="50" style="margin-top: -10px; margin-left: 10px;">
+          <a href="{% url 'home' %}" style="text-decoration: none; margin-left: 13px; margin-top: -10px;">
+              <h1 class="topic">NUZZLE & NURTURE</h1>
+          </a>
+          {% if user.is_authenticated %}
+          <form action="{% url 'logout' %}" method="POST" style="display: inline; position: absolute; right: 20px; top: 8px;">
+            {% csrf_token %}
+            <button type="submit" style="background: none; border: none; cursor: pointer;">
+                <h3 style="font-family: Kumbh Sans, sans-serif; display: inline; vertical-align: middle;">
+                  {{ user.username }} Logout
+                </h3>
+                <img src="{% static 'images/download 1.png' %}" alt="logout" width="50" height="50" style="vertical-align: middle; margin-left: 10px;">
+            </button>
+        </form>
+          {% else %}
+          <a href="{% url 'app:signup' %}" style="text-decoration: none; position: absolute; right: 20px; top: 8px;">
+              <h3 style="font-family: Kumbh Sans, sans-serif; display: inline; vertical-align: middle;">Sign Up</h3>
+              <img src="{% static 'images/download 1.png' %}" alt="login" width="50" height="50" style="vertical-align: middle; margin-left: 10px;">
+          </a>
+          {% endif %}
+      </div>
+  </nav>
+
+      <nav>
+        <div class="nav-2">
+          <ul style="font-family: Kumbh Sans", sans-serif;>
+            <li class="link"><a href="#about-us">About Us</a></li> 
+            <li class="link"><a href="#our-services">Our Services</a></li> 
+            <li class="link"><a href="#contact-us">Contact Us</a></li> 
+            <li class="link"><a href="#blogs">Blogs</a></li>
+            <li class="link"><a href="#faq">FAQ</a></li> 
+          </ul>
+        </div>
+      </nav>
+    
+
+
+<!-- whole flex container -->
+<div class="flex-container0">
+<!-- flex container0 -->
+<div class="flex-container">
+<a href="{% url 'app:page2' %}" style="text-decoration: none">
+<div class="box" style="position: relative;">
+  <div class="container" style="margin-left: 10px; margin-top: 0px;" >
+ 
+  <h3>Pet Rehoming</h3>
+  <p>Helping pets to find new homes</p>
+  <h3>Buying a Pet</h3>
+  <p>Adopt a new furry friend today</p>
+  <h3>Selling a pet</h3>
+  <p>Rehome you pet with our support</p>
+
+  </div></a>
+  <div ><img id='img' src="{% static 'images/anusha-barwa-ppKcYi1CXcI-unsplash.jpg' %}"  alt="" width="255" height="200" style="position: relative;"  >
+  </div>
+</div>
+</div>
+<!-- flex-container1 -->
+
+
+<div class="flex-container1">
+  <!-- box1 -->
+  <a href="{% url 'app:page1' %}" style="text-decoration: none" style="color: #000;"> 
+    <div  class="box1" style="color: #000;">
+      <div class="container1">
+   <h3 style="font-family: Merienda, cursive;">Pet Grooming</h3>
+     <p style="font-family: Merienda, cursive;">Find top-natch pet care servive near you</p>
+     <img id='img1' src="{% static 'images/jack-cohen-hbVFY7wntsI-unsplash.jpg' %}" alt="" width="150" height="10">
+     </div>
+   </div>
+  </a>
+ 
+  <!-- box2 -->
+  <a href="{% url 'app:page3' %}" style="text-decoration: none" >
+    <div href="page3.html" class="box3">
+        <div class="container3" style="color: #000;">
+          <h3  style="font-family: Merienda, cursive;">Pet sitting</h3>
+          <p  style="font-family: Merienda, cursive;">Trusted pet sitters and drop-off care for your pets!
+              “Seeking Passionate Pet Sitters for Exciting Opportunities!”</p>
+              <img id='img5' src="{% static 'images/tadeusz-lakota-rR5MvBcjmMA-unsplash.jpg' %}" alt="" width="200" height="140">
+        </div>
+      </div>
+      </div>
+  </a>
+ 
+<!-- flex-container2 -->
+<div class="flex-container2">
+  <!-- box3 -->
+  <a href="{% url 'app:page4' %}" style="text-decoration: none" style="color: #000;">
+    <div  class="box2">
+        <div class="container2" style="color: #000;">
+      <h3 style="font-family: Merienda, cursive;" > Daily care</h3>
+       <p  style="font-family: Merienda, cursive;">Essential pet tips and care ,all in one place! your guide to pet food and pet training</p>
+       <img id='img2' src="{% static 'images/hulki-okan-tabak-JQN2JMdq3Yo-unsplash.jpg' %}" alt="" width="200" height="150">
+       </div>
+      </div>
+  </a>
+  
+<!-- box4 -->
+<a href="{% url 'app:page5' %}" style="text-decoration: none">
+    <div class="box4">
+        <div class="container4" style="color: #000;">
+          <h3  style="font-family: Merienda, cursive;">Health Care</h3>
+          <p  style="font-family: Merienda, cursive;" >Top teir Health care every Time</p>
+          <img id="img4" src="{% static 'images/resilience-cbd-h7TcHpLW4W0-unsplash.jpg' %}" alt="" width="200" height="100">
+      </div>
+      </div>
+</a>
+
+</div>
+</div>
+
+<footer class="footer" style="height:125px ; position: relative; margin-top: 20px;">
+  <div class="row1">
+      <div class="col" style="margin-top: -30px;">
+          <h3 style="margin-left: 18px;">Our Services</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Pet Sitting</li>
+              <li>Pet Rehoming</li>
+              <li>Daily care</li>
+              <li>Health care</li>
+              <li>Pet Grooming</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3 style="margin-left: 18px;">Contact Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Mobile No: 9876543210</li>
+              <li>Email: nuzzleandnurture@gmail.com</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3 style="margin-left: 18px;">Join Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>As a Pet Sitter</li>
+              <li>As a Pet Buyer</li>
+              <li>As a Pet Seller</li>
+          </ul>
+      </div>
+  </div>
+</footer>
+
+
+
+    
+  </body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SignUp</title>
+    {% load static %}
+    <style>
+      .nav-link {
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-family: "Kumbh Sans", sans-serif;
+        }
+        
+        .navbar-nav {
+        display: flex;
+        justify-content: center; /* Centers the items horizontally */
+        width: 100%; /* Takes full width for better alignment */
+        }
+        .row1{
+        display:flex;
+        }
+        
+         .topic {
+        font-size: 36px;
+        font-family: "Jolly Lodger", sans-serif;
+        color: #000;
+        
+        margin: 0;
+        }
+        
+         .nav-2 {
+        text-align: center; /* Center-aligns the text inside the nav */
+        }
+        
+        .footer {
+        background-color: #DBEFEC;
+        height: auto; /* Adjust to fit content */
+        position: relative;
+        padding: 20px;
+        /* margin-top: 25px; */
+        text-align: center;
+        bottom:zero;
+        }
+        
+        .row1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; /* Align items at the top */
+        text-align: left; /* Left-align the text in each column */
+        }
+        
+        .col {
+        flex: 1; /* Equally distribute space */
+        margin: 10px;
+        }
+        
+        h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: black;
+        }
+        
+        ul {
+        list-style-type: none;
+        padding: 0;
+        }
+        
+        li {
+        font-size: 16px;
+        line-height: 1.6;
+        }
+        .container{
+        justify-content:center;
+        font-family:"Cormorant Garamond", serif;
+        font-size:30px;
+        }
+        /* div class form */
+        .a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh; /* Full viewport height */
+        }
+        
+        /* #bottom class */
+        .custom-button {
+        width: 150px; /* Width of the button */
+        height: 50px; /* Height of the button */
+        background-color: #4CAF50; /* Background color (Green) */
+        color: white; /* Text color */
+        font-size: 20px; /* Font size */
+        border: none; /* Remove default border */
+        border-radius: 10px; /* Rounded corners */
+        cursor: pointer; /* Change cursor on hover */
+        padding: 10px 20px; /* Padding inside the button */
+        text-align: center; /* Center the text inside the button */
+        }
+        
+        .custom-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+
+
+    <!-- #Font of form -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- nuzzle and nurture font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Kumbh+Sans:wght@100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+    <nav class="navbar bg-body-tertiary" >
+      <div class="container-fluid">
+        <img src="{% static 'images/IMG-20240723-WA0010 1.png' %}" alt="logo" style="width: 50px; height: auto;">
+       <a href="{% url 'home' %}" style="text-decoration: none; margin-left: 13px; margin-top: 15px;font-family: 'Jolly Lodger', system-ui;color:black;font-size:50px;" >Nuzzle and Nurture</a>
+      </div>
+      </nav>
+
+      <nav class="nav-2" style="background-color: #DBEFEC; margin-top: 15px; height: 50px;">
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100%;">
+          <a class="nav-link" style="font-family:'Cormorant Garamond', serif; font-size: 30px; font-weight: bold; color: #333;">Sign Up</a>
+        </div>
+    </nav>
+
+   <div class="a">
+    <form class="container" action="{% url 'app:signup' %}" method="POST">
+        {% csrf_token %}
+         <label for="name">User name</label>
+         <input type="text" id="name" name="username" required>
+         <br><br>
+
+         <label for="pass">Password:</label>
+         <input type="password" id="pass" name="password" required>
+         <br><br>
+
+         <label for="email">Email:</label>
+         <input type="email" id="male" name="email">
+          <br><br>
+         <button type="submit" name="sign up" class="custom-button">Sign Up</button>
+         <br><br>
+    </form>
+</div>
+
+
+</div>
+</div>
+
+<footer class="footer" style="height:125px ; position: relative; margin-top: 10px;">
+  <div class="row1">
+      <div class="col" style="margin-top: -30px;">
+          <h3>Our Services</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Pet Sitting</li>
+              <li>Pet Rehoming</li>
+              <li>Daily care</li>
+              <li>Health care</li>
+              <li>Pet Grooming</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3>Contact Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Mobile No: 9876543210</li>
+              <li>Email: nuzzleandnurture@gmail.com</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3>Join Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>As a Pet Sitter</li>
+              <li>As a Pet Buyer</li>
+              <li>As a Pet Seller</li>
+          </ul>
+      </div>
+  </div>
+</footer>
+  </body>
+
+</html>

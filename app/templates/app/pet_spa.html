@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>pet_spa</title>
+    <link rel="stylesheet" href="sell_your_pet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<!-- navbar -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container">
+    <img src="\IMG-20240723-WA0010 1.png" alt="logo" style="width: 50px; height: auto;">
+    <a class="navbar-brand" href="homepage.html" style="text-decoration: none; margin-left: 13px; margin-top: 15px;font-family: 'Jolly Lodger', system-ui;color:black;font-size:50px;" >Nuzzle and Nurture</a>
+   </div>
+</nav>
+<nav class="navbar_sell" style="background-color:#DBEFEC;">
+  <div class="container1">
+    <h1>Find Pet Spa Near By</h1>
+  </div>
+</nav>
+<!-- form -->
+<div class="a">
+  <form class="container" action="/submit_form" method="POST">
+       <label for="type">Pet Type</label>
+       <input type="text" id="type" name="name" required><br><br>
+       <label for="city">City</label>
+       <input type="text" id="city"  required><br><br>
+       <label for="Area">Specific Area</label>
+       <input type="text" id="Area" ><br><br>
+       <label for="availablity">Availability</label>
+       <input type="text" id="availablity"><br><br>
+       <button type="button" name="submit" class="custom-button">Search</button>
+       <br><br>
+  </form>
+</div>
+
+
+<!-- footer -->
+<footer class="footer" style="height:125px ; position: relative; margin-top: 10px;">
+  <div class="row1">
+      <div class="col" style="margin-top: -30px;">
+          <h3>Our Services</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Pet Sitting</li>
+              <li>Pet Rehoming</li>
+              <li>Daily care</li>
+              <li>Health care</li>
+              <li>Pet Grooming</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3>Contact Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Mobile No: 9876543210</li>
+              <li>Email: nuzzleandnurture@gmail.com</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3>Join Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>As a Pet Sitter</li>
+              <li>As a Pet Buyer</li>
+              <li>As a Pet Seller</li>
+          </ul>
+      </div>
+  </div>
+</footer>
+  </body>
+</html>

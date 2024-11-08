@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Page 3</title>
+    {% load static %}
+    <style >
+
+       .body{
+         background-image:url("C:\Users\Dharani\Downloads\pexels-coppertist-wu-313365563-15580402.jpg")
+       }
+       .nav-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: "Kumbh Sans", sans-serif;
+}
+      
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    width: 100%; /* Takes full width for better alignment */
+}
+      .box{
+        height:400px;
+        width:400px;
+        background-color:#EAD3D3;
+        border-radius:50px;
+        margin-left: 170px;
+
+        }
+        .box1{
+        height:400px;
+        width:400px;
+        background-color:#C9DEF1;
+        border-radius:50px;
+        margin-left: 150px;
+        }
+      .container{
+        padding:10px;
+        font-family: Merienda, cursive;
+        margin-left: 10px;
+      }
+      .container1{
+        padding:10px;
+      }
+      .container4{
+        padding:10px;
+      }
+      #img{
+        border-radius:50px;
+        padding:10px;
+      }
+
+      #img1{
+        border-radius:40px;
+        justify-content:right;
+      }
+      
+      .flex-container{
+        flex:1;
+        min-width:0;
+      }
+
+      .box2{
+        height:250px;
+        width:300px;
+        background-color:#FBCA6C;
+        border-radius:20px;
+        padding:10px;
+      }
+
+      #img2{
+        border-radius:40px;
+      }
+      
+      .flex-container1{
+        flex:1;
+        min-width:0;
+        /* flex-direction:column; */
+      }
+      .flex-container2{
+        flex:1;
+        min-width:0;
+        /* flex-direction:column; */
+      }
+
+      .container-fluid {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically */
+    height: 100%; /* Takes full height of the navigation bar */
+}
+
+      #img4{
+        border-radius:30px;
+      }
+      .flex-container0{
+        display:flex;
+        justify-content:space-between;
+        gap:30px;
+      }
+      .row1{
+        display:flex;
+      }
+      
+      .topic {
+    font-size: 36px;
+    font-family: "Jolly Lodger", sans-serif;
+    color: #000;
+    
+    margin: 0;
+}
+      .flexbox1{
+        display: flex;
+        padding: 50px 50px 50px 50px;
+      }
+      .nav-2 {
+    text-align: center; /* Center-aligns the text inside the nav */
+}
+
+.footer {
+    background-color: #DBEFEC;
+    height: auto; /* Adjust to fit content */
+    position: relative;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items at the top */
+    text-align: left; /* Left-align the text in each column */
+}
+
+.col {
+    flex: 1; /* Equally distribute space */
+    margin: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Kumbh+Sans:wght@100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    
+
+  </head>
+  <body>
+
+    <nav class="navbar bg-body-tertiary" style="margin-left: -1170px;">
+      <div class="container-fluid" >
+       <img src="{% static 'images/IMG-20240723-WA0010 1.png' %}" alt="logo" width="50" height="50"  style="margin-top: 15px; margin-left: 10px;" >
+    
+       <a href="{% url 'home' %}" style="text-decoration: none; margin-left: 13px; margin-top: 15px;" ><h1 class="topic" > Nuzzle & Nurture</h1></a>
+            
+      </div>
+      </nav>
+
+      <nav class="nav-2" style="background-color: #DBEFEC; margin-top: 15px; height: 50px;">
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100%;">
+            <a class="nav-link">PET SITTING</a>
+        </div>
+    </nav>
+<div class="flexbox1">
+
+<div class="flex-container0">
+    <!-- flex container0 -->
+    <a href="{% url 'app:be_pet_sit' %}" style="text-decoration: none" style="color: #000;">
+      <div class="flex-container" style="position: relative;color: #000;">
+        <div class="box">
+          <div class="container" style="font-family: Merienda, cursive;"> 
+         <h3>Become a Pet Sitter</h3>
+         <p>"Love pets? Turn your passion into a rewarding job."</p>
+         
+         <img id='img' src="{% static 'images/Rectangle 19.png' %}" alt="" width="290" height="225" style="margin-top: 10px; margin-left: 60px;">
+    
+         </div>
+        </div>
+        </div>
+    </a>
+    
+    
+    <!-- flex container1 -->
+    <a href="{% url 'app:Find_Pet_Sit' %}" style="text-decoration: none" style="color: #000;">
+      <div class="flex-container" style="position: relative;color: #000;">
+        <div class="box1">
+          <div class="container">
+         <h3>Search for Pet Sitter</h3>
+         <p>"Find the perfect pet for you with our easy and reliable process—connect with breeders and shelters to welcome a new  friend into your home!"
+        </p>
+    
+         <img id='img' src="{% static 'images/Rectangle 21.png' %}"  alt="" width="290" height="210" style="margin-top: -20px; margin-left: 60px;">
+         </div>
+        </div>
+        </div>
+
+    </a>
+    
+</div>
+
+
+
+
+
+</div>
+</div>
+
+<footer class="footer" style="height:125px ; position: relative; margin-top: 10px;">
+  <div class="row1">
+      <div class="col" style="margin-top: -30px;">
+          <h3>Our Services</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Pet Sitting</li>
+              <li>Pet Rehoming</li>
+              <li>Daily care</li>
+              <li>Health care</li>
+              <li>Pet Grooming</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3>Contact Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Mobile No: 9876543210</li>
+              <li>Email: nuzzleandnurture@gmail.com</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3>Join Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>As a Pet Sitter</li>
+              <li>As a Pet Buyer</li>
+              <li>As a Pet Seller</li>
+          </ul>
+      </div>
+  </div>
+</footer>
+  </body>
+
+</html>

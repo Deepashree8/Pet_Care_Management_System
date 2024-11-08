@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>sell_your_pet</title>
+    {% load static %}
+    <style>
+      .footer {
+        background-color: #DBEFEC;
+        height: 150px; /* Adjust to fit content */
+        position:relative;
+        bottom:0;
+        padding:20px;
+        margin-top:30px;
+     }
+    .col{
+        flex:1;
+    } 
+    .row1{
+        display:flex;
+        justify-content: space-between;
+    }  
+    .topic{
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+    }
+    .topic h2{
+        margin:0;
+    }
+    .h1{
+        font-family:"Inknut Antiqua", serif;
+    }
+    .navbar_sell{
+        display: flex;
+        justify-content: center; /* Centers the content horizontally */
+        align-items: center; /* Centers the content vertically */
+        height: 40px; /* Adjust the height as needed */
+    }
+     /* form */
+    .a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px;
+        background-color:#DBEFEC;
+        border-radius: 10px;          /* Rounded corners */
+        padding: 20px;                /* Internal spacing */
+        width: fit-content;
+        margin-left: 360px;       /* Left margin */
+        margin-right: auto;    /* Right margin */
+
+    }
+
+    
+     /* form-font */
+    .container{
+        font-family:"Cormorant Garamond", serif;
+        font-size:20px;
+    } 
+     /* input text field */
+    input[type="text"]{ 
+    border-radius:5px;
+    } 
+     /* bottom class  */
+    .custom-button {
+    width: 150px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    background-color: #4CAF50; /* Background color (Green) */
+    color: white; /* Text color */
+    font-size: 20px; /* Font size */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center the text inside the button */
+    }
+    
+    .custom-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    }
+    </style>
+    <link rel="stylesheet" href="sell_your_pet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<!-- navbar -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container">
+    <img src="{% static 'images/IMG-20240723-WA0010 1.png' %}" alt="logo" style="width: 50px; height: auto;">
+    <a class="navbar-brand" href="{% url 'home' %}" style="text-decoration: none; margin-left: 13px; margin-top: 15px;font-family: 'Jolly Lodger', system-ui;color:black;font-size:50px;" >Nuzzle and Nurture</a>
+   </div>
+</nav>
+<nav class="navbar_sell" style="background-color:#DBEFEC;">
+  <div class="container1">
+    <h1>SELL YOUR PET</h1>
+  </div>
+</nav>
+<!-- form -->
+<div class="a">
+  <form class="container" action="{% url 'app:sell' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+       <label for="name">Pet Name</label>
+       <input type="text" id="name" name="name" required><br><br>
+       <label for="type">Pet Type</label>
+       <input type="text" id="type"  name="type" required><br><br>
+       <label for="breed">Pet Breed</label>
+       <input type="text" id="breed" name="breed"><br><br>
+       <label for="age">Pet Age</label>
+       <input type="number" id="age" name="age"><br><br>
+       <label for="health">Health status</label>
+       <input type="text" id="health" name="health"><br><br>
+       <label for="price">Price</label>
+       <input type="number" id="price" name="price"><br><br> 
+       <label for="name">Pet owner</label>
+       <input type="text" id="name" name="owner_name" required><br><br>
+       <label for="place">location</label>
+       <input type="text" id="name" name="place" required><br><br>
+       <label for="num">Contact Number</label>
+       <input type="number" id="name" name="num" required><br><br>
+ 
+       <label for="image">Upload Pet Image</label>
+       <input type="file" id="image" name="image"><br><br>
+
+       <button type="submit" name="submit" class="custom-button">Submit</button>
+       <br><br>
+  </form>
+</div>
+
+
+<!-- footer -->
+<footer class="footer" style="height:125px ; position: relative; margin-top: 10px;">
+  <div class="row1">
+      <div class="col" style="margin-top: -30px;">
+          <h3>Our Services</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Pet Sitting</li>
+              <li>Pet Rehoming</li>
+              <li>Daily care</li>
+              <li>Health care</li>
+              <li>Pet Grooming</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3>Contact Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>Mobile No: 9876543210</li>
+              <li>Email: nuzzleandnurture@gmail.com</li>
+          </ul>
+      </div>
+
+      <div class="col" style="margin-top: -30px;">
+          <h3>Join Us</h3>
+          <ul style="margin-left: 20px; margin-top: -5px;">
+              <li>As a Pet Sitter</li>
+              <li>As a Pet Buyer</li>
+              <li>As a Pet Seller</li>
+          </ul>
+      </div>
+  </div>
+</footer>
+  </body>
+</html>
